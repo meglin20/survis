@@ -7,63 +7,80 @@
     <title>My Website</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <script defer src="js/response.js"></script>
   </head>
   <body>
     <main>
         <div className="App">
-            <div class="field-container">
-                <div class="field-title">Species of Animal</div>
-                <br>
-                <div class="text-input">
-                    <input type="text" class="form__input" id="species" placeholder="ex. Cat" required="" />
+            <div class="logo">SurVis</div>
+
+            <div class="wrapper">
+                <div class="sidebar">
+                    <img class="profile-pic" src="images/profile.png" alt="Home">
+                    <img src="images/chats.png" alt="Home">
+                    <img src="images/home.png" alt="Past Reports">
+                    <img src="images/past.png" alt="Chats">
+                </div>
+                <div class="wrapper-vertical">
+                    <img class="progress" src="images/progress.png" alt="Home">
+                    <div class="form-content">
+                        <div class="field-container">
+                            <div class="field-title">Species of Animal</div>
+                            <br>
+                            <div class="text-input">
+                                <input type="text" class="form__input" id="species" placeholder="ex. Cat" required="" />
+                            </div>
+                        </div>
+                        <div class="field-container">
+                            <p class="field-title">Animal Ownership</p>
+                            <br>
+                            <div class="check-container">
+                                <label>
+                                <input type="checkbox"/>
+                                <span>Pet</span>
+                                </label>
+                                <label>
+                                    <input type="checkbox"/>
+                                    <span>Wild</span>
+                                </label>
+                                <label>
+                                    <input type="checkbox"/>
+                                    <span>Stray Animal</span>
+                                </label>
+                            </div>
+                        </div> 
+
+                        <div class="field-container">
+                            <p class="field-title">The State of Animal When Found</p>
+                            <br>
+                            <div class="check-container">
+                                <label>
+                                    <input type="checkbox" id="state-alive1" onclick="getValue('state-alive1')"/>
+                                    <span>Alive</span>
+                                </label>
+                                <label>
+                                    <input type="checkbox" id="state-eu1" onclick="getValue('state-eu1')"/>
+                                    <span>Euthanized</span>
+                                </label>
+                            </div>
+                        </div> 
+                        <div class="field-container">
+                            <p class="field-title">Animal is Vaccinated</p>
+                            <br>
+                            <div class="check-container">
+                                <label>
+                                    <input type="checkbox"/>
+                                    <span>Yes</span>
+                                </label>
+                                <label>
+                                    <input type="checkbox"/>
+                                    <span>No</span>
+                                </label>
+                            </div>
+                        </div> 
+                    </div>
                 </div>
             </div>
-            <div class="field-container">
-                <p class="field-title">Animal Ownership</p>
-                <br>
-                <div class="check-container">
-                    <label>
-                    <input type="checkbox"/>
-                    <span>Pet</span>
-                    </label>
-                    <label>
-                        <input type="checkbox"/>
-                        <span>Wild</span>
-                    </label>
-                    <label>
-                        <input type="checkbox"/>
-                        <span>Stray Animal</span>
-                    </label>
-                </div>
-            </div> 
-            <div class="field-container">
-                <p class="field-title">The State of Animal When Found</p>
-                <br>
-                <div class="check-container">
-                    <label>
-                        <input type="checkbox"/>
-                        <span>Alive</span>
-                    </label>
-                    <label>
-                        <input type="checkbox"/>
-                        <span>Euthanized</span>
-                    </label>
-                </div>
-            </div> 
-            <div class="field-container">
-                <p class="field-title">Animal is Vaccinated</p>
-                <br>
-                <div class="check-container">
-                    <label>
-                        <input type="checkbox"/>
-                        <span>Yes</span>
-                    </label>
-                    <label>
-                        <input type="checkbox"/>
-                        <span>No</span>
-                    </label>
-                </div>
-            </div> 
         </div>
     </main>
   </body>

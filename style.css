@@ -1,7 +1,62 @@
+body {
+    font-family: "Source Sans Pro", sans-serif;
+    margin: 0px;
+  }
+
 .App {
     display: flex;
     flex-direction: column;
+    margin-left: 100px;
   }
+
+  .wrapper {
+    display: flex;
+  }
+
+  .wrapper-vertical {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidebar {
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      margin-top: 65px;
+      width: 85px; /* adjust this value to set the width of the bar */
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .profile-pic {
+    margin-top: 70px;
+  }
+
+  .progress {
+    width: 80%;
+    margin-top: 80px;
+    margin-left: 120px;
+  }
+
+  .sidebar img {
+    width: 30px; /* adjust this value to set the size of the icons */
+    margin-bottom: 30px; /* add some space between the icons */
+  }
+
+  .form-content {
+    flex: 1;
+    margin: 10% 15% 10% 15%;
+    padding: 40px;
+    width: 62%;
+    height: 65%;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1);
+  }    
+
   
   label {
     cursor: pointer;
@@ -9,12 +64,26 @@
   
   span {
     color: #131313;
-    font-family: "Lato", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 17px;
     white-space: nowrap;
+  }
+
+  .logo {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding-left: 40px;
+    color: #7790D0;
+    font-size: 24px;
+    font-weight: bolder;
+    height: 65px;
+    font-family: "Source Sans Pro", sans-serif;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   }
   
   input[type="checkbox"] {

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <script defer src="js/response.js"></script>
+  </head>
+  <body>
+    <main>
+        <div className="App">
+            <div class="logo">SurVis</div>
+            <div class="sidebar">
+                <img class="profile-pic" src="images/profile.png" alt="Home">
+                <img src="images/home.png" alt="Home">
+                <img src="images/past.png" alt="Past Reports">
+                <img src="images/chats.png" alt="Chats">
+            </div>
+            <div class="wrapper">
+                <div class="wrapper-vertical">
+                    <div>
+                        <img class="progress" src="images/progress2.png" alt="Home">
+                    </div>
+                    <div class="page-header">Exposure</div>
+                    <div class="case-id">Case ID: 2423</div>
+
+                    <div class="outer-container">
+
+                        <div class="section-header">Human Exposure <img class="qmark" src="images/q.png" alt="Question Mark"></div>
+                        <p>This incident does not involve human exposure 
+                            <span>
+                                <label>
+                                <input type="checkbox" id="exposure-checkbox"/>
+                                </label>
+                            </span>
+                        </p>
+
+                        <div class="form-content">
+                            <div class="field-container">
+                                <p class="field-title" style="margin-top: 0px">Name of Patient</p>
+                                <br>
+                                <div class="text-input">
+                                    <input type="text" class="form__input" id="name2" placeholder="ex. John Smith" required="" />
+                                </div>
+                            </div>
+                            
+                            <div class="field-container">
+                                <p class="field-title">Sex of Patient at Birth</p>
+                                <br>
+                                <div class="check-container">
+                                    <label>
+                                        <input type="checkbox"/>
+                                        <span>Male</span>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox"/>
+                                        <span>Female</span>
+                                    </label>
+                                </div>
+                            </div> 
+
+                            <div class="field-container">
+                                <p class="field-title">Age of Patient</p>
+                                <br>
+                                <div class="text-input">
+                                    <input type="text" class="form__input" id="age2" placeholder="ex. 28" required="" />
+                                </div>
+                            </div>
+
+                            <div class="field-container">
+                                <p class="field-title">Patient Phone Number</p>
+                                <br>
+                                <div class="text-input">
+                                    <input type="text" class="form__input" id="phone2" placeholder="ex. 412-123-1234" required="" />
+                                </div>
+                            </div>
+
+                            <div class="field-container">
+                                <p class="field-title">Patient Address</p>
+                                <br>
+                                <div class="text-input">
+                                    <input type="text" class="form__input" id="address2" placeholder="ex. 5000 Forbes Ave" required="" />
+                                </div>
+                            </div>
+
+                            <div class="field-container two-cols">
+                                <div>
+                                <p class="field-title">Patient City</p>
+                                    <br>
+                                    <div class="text-input">
+                                        <input type="text" class="form__input" id="city2" placeholder="ex. Pittsburgh" required="" />
+                                    </div>
+                                </div>
+                                <div style="margin-left: auto; padding-left: 30px">
+                                    <p class="field-title">Patient State</p>
+                                        <br>
+                                        <div class="text-input">
+                                            <input type="text" class="form__input" id="state2" placeholder="ex. PA" required="" />
+                                        </div>
+                                </div>
+                            </div>
+
+                            <div class="field-container">
+                                <p class="field-title">Patient Zip Code</p>
+                                <br>
+                                <div class="text-input">
+                                    <input type="text" class="form__input" id="zip2" placeholder="ex. 15213" required="" />
+                                </div>
+                            </div>
+
+                            <div class="field-container">
+                                <p class="field-title">Nature of Exposure <img class="qmark" src="images/q.png" alt="Question Mark"></p>
+                                <br>
+                                <div class="text-input">
+                                    <input type="text" class="form__input" id="nature2" placeholder="ex. scratch on the leg close to ankle" required="" />
+                                </div>
+                            </div>
+
+                            <div class="field-container">
+                                <p class="field-title">Add another human exposure <img class="qmark" src="images/plus.png" alt="Add Icon"></p>
+                            </div>
+                            
+                        </div>
+
+
+                        <div class="section-header">Animal Exposure <img class="qmark" src="images/q.png" alt="Question Mark"></div>
+                        <p>This incident does not involve animal exposure 
+                            <span>
+                                <label>
+                                <input type="checkbox" id="exposure-checkbox"/>
+                                </label>
+                            </span>
+                        </p>
+
+                        <div class="form-content">
+                            <div class="field-container">
+                                <p class="field-title" style="margin-top: 0px">Name of Patient</p>
+                                <br>
+                                <div class="text-input">
+                                    <input type="text" class="form__input" id="name2a" placeholder="ex. Cooper" required="" />
+                                </div>
+                            </div>
+
+                            <div class="field-container">
+                                <p class="field-title">Age of Patient</p>
+                                <br>
+                                <div class="text-input">
+                                    <input type="text" class="form__input" id="age2a" placeholder="ex. 28" required="" />
+                                </div>
+                            </div>
+
+                            <div class="field-container">
+                                <p class="field-title">Breed of Patient</p>
+                                <br>
+                                <div class="text-input">
+                                    <input type="text" class="form__input" id="breed2" placeholder="ex. dog" required="" />
+                                </div>
+                            </div>
+                            
+                            <div class="field-container">
+                                <p class="field-title">Sex of Patient at Birth</p>
+                                <br>
+                                <div class="check-container">
+                                    <label>
+                                        <input type="checkbox"/>
+                                        <span>Male</span>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox"/>
+                                        <span>Female</span>
+                                    </label>
+                                </div>
+                            </div> 
+
+                            <div class="field-container">
+                                <p class="field-title">Animal Ownership</p>
+                                <br>
+                                <div class="check-container">
+                                    <label>
+                                    <input type="checkbox"/>
+                                    <span>Pet</span>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox"/>
+                                        <span>Wild</span>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox"/>
+                                        <span>Stray Animal</span>
+                                    </label>
+                                </div>
+                            </div> 
+                            
+                            <div class="field-container">
+                                <p class="field-title">Animal is Vaccinated <img class="qmark" src="images/q.png" alt="Question Mark"></p>
+                                <br>
+                                <div class="check-container">
+                                    <label>
+                                        <input type="checkbox"/>
+                                        <span>Yes</span>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox"/>
+                                        <span>No</span>
+                                    </label>
+                                </div>
+                            </div> 
+                            <div class="field-container">
+                                <p class="field-title">Date of Vaccination <img class="qmark" src="images/q.png" alt="Question Mark"></p>
+                                <br>
+                                <div class="text-input">
+                                    <input type="text" class="form__input" id="vac-date1" placeholder="MM/DD/YYYY" required="" />
+                                </div>
+                            </div>
+
+                            <div class="field-container">
+                                <p class="field-title">Add another animal exposure <img class="qmark" src="images/plus.png" alt="Add Icon"></p>
+                            </div>
+                            
+                        </div>
+
+                        <div class="button-container">
+                            <div class="left-button">
+                                <button onclick="window.location.href='form_1.html'">Back</button>
+                            </div>
+                            <div class="right-button">
+                                <button onclick="window.location.href='form_3.html'">Next</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+  </body>
+</html>
